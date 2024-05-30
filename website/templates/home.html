@@ -1,0 +1,89 @@
+{% extends "base.html" %} {% block title %}PyMiniGames{% endblock %} 
+
+{% block content%}
+<br><br><br>
+<h1 align="center">Games</h1>
+<hr>
+  <br><h2 id="Monkey">Monkey Hates Cowboy</h2>
+  <div>
+    <p class="content">Step into the "Monkey Hates Cowboy," a fun and challenging endless runner where survival is your only goal! In this adventure, you'll control a scared cowboy through a journey filled with angry monkeys and bananas thrown at you. The game takes place in desert, set against a beautiful sunset sky.</p>
+    <div>
+      <img src="{{ url_for('static', filename='monkeycowboy.png') }}" alt="Monkey Hates Cowboy" width="610" height="237"><br>
+      <button id="startButton2"><strong>Play</strong><br>Monkey Hates Cowboy</button><br>
+    </div>
+    <br><h2>Gameplay Overview:</h2>
+    <ul class="overview">
+        <li><strong>Objective:</strong> Stay alive as long as possible by dodging the monkey and dangerous bananas.</li>
+        <li><strong>Controls:</strong> The cowboy can only jump. Timing your jumps perfectly is key to avoiding the dangers ahead.</li>
+        <li><strong>Obstacles:</strong>
+            <ul>
+                <li><strong>Monkey:</strong> The monkey runs towards the cowboy. Jump over it to avoid getting caught.</li>
+                <li><strong>Banana:</strong> These seemingly harmless fruits are traps. Stay under them to be safe.</li>
+            </ul>
+        </li>
+    </ul>
+    <h2>Features:</h2>
+    <ul class="overview">
+        <li><strong>Simple Mechanics:</strong> Easy to learn, hard to master. The game is hard and designed to get (almost) impossible at some point.</li>
+        <li><strong>Increasing Difficulty:</strong> The game ramps up the challenge as you progress, with faster monkeys and more frequent bananas.</li>
+        <li><strong>Scoring:</strong> The longer you survive, the higher your score climbs.</li>
+    </ul>
+
+    <p class="content">In "Monkey Hates Cowboy," your reflexes will be put to the test. Can you outjump the monkey and outsmart the bananas? See how long you can survive!
+    </p>
+    </div>
+    <br><hr>
+    <br><h2 id="Beach">Beach Defender</h2>
+    <p class="content">"Beach Defender" is an exciting castle defense game set on a vibrant beach. Protect your sandcastle from waves of approaching enemies by shooting sandballs at them. The enemies include a variety of beach-themed creatures such as crabs, turtles, birds, ants, crocodiles, and more, each with their own unique characteristics. Upgrade your sandcastle and survive!</p>
+    <div>
+      <img src="{{ url_for('static', filename='beach.png') }}" alt="Beach Defender" width="610" height="237"><br>
+      <button id="startButton"><strong>Play</strong><br>Beach Defender</button><br>
+    </div>
+    <br><h2>Gameplay Overview:</h2>
+    <ul class="overview">
+      <li><strong>Objective:</strong> Defend your sandcastle from furious beach monsters. Your sandcastle serves as your base and line of defense.  Shoot sandballs at incoming enemies to defend yourself! Each type of enemy poses different threats and requires strategic targeting.</li>
+      <li><strong>Controls:</strong> Sandcastle can only shoot. <strong>Note: </strong>Aiming is angled to make targeting harder!</li>
+      <li><strong>Enemies:</strong>
+          <ul>
+             <li><strong>Crab: </strong> Default enemy equipped with a spear. <strong>HP: </strong>80<strong> DMG: </strong>20</li>
+             <li><strong>Turtle: </strong> Slow, but deadly once near. Uses a pair of knives as a weapon. For protection, turtle has an armored six pack. <strong>HP: </strong>120<strong> DMG: </strong>35</li>
+             <li><strong>Ant: </strong> Seemingly harmless, ant is the fastest and smallest enemy in the game, making it hard to hit it. Equipped with a small sword. <strong>HP: </strong>60<strong> DMG: </strong>15</li>
+             <li><strong>Crocodile: </strong> With medium movement speed, this angry crocodile deals a decent amount of damage with his sledgehammer. <strong>HP: </strong>80<strong> DMG: </strong>30</li>
+             <li><strong>Bird: </strong> Fast and small, but weakest of them all. Bird throws a bomb once above the castle, dealing a significant damage. <strong>HP: </strong>40<strong> DMG: </strong>100</li>
+             <li><strong>Penguin: </strong> Unarmored and slow, yet hard to eliminate as penguin hides behind the other creatures with his sniper rifle. <strong>HP: </strong>60<strong> DMG: </strong>20</li>
+             <li><strong>Flying Saurus: </strong> Equipped with a minigun, this sometimes hard to notice creature will spray your castle from medium range. <strong>HP: </strong>80<strong> DMG: </strong>25</li>
+             <li><strong>Duck: </strong> Using strong shield to protect himself, this furious looking duck will attack you with an axe. Movement is faster than avarage. <strong>HP: </strong>200<strong> DMG: </strong>15</li>
+             <li><strong>Mutated Elephant:</strong> Strongest of them all. This weird elephant uses abnormally huge shotgun from short range, dealing fast damage. <strong>HP: </strong>280<strong> DMG: </strong>40</li>
+          </ul>
+      </li>
+  </ul>
+    <div>
+        <h2>Features:</h2>
+        <ul>
+            <li>
+                <strong class="overview">Game Interface</strong>:
+                <ul class="overview">
+                    <li><strong>Money</strong>: Earned by defeating enemies, this currency is used to purchase upgrades and repairs. Each enemy is worth different amount of money.</li>
+                    <li><strong>Kills</strong>: Tracks the number of enemies defeated, contributing to your overall score.</li>
+                    <li><strong>Level</strong>: Displays your current progress through the game, with higher levels introducing more challenging enemy waves.</li>
+                    <li><strong>Health and Healthbar</strong>: Shows your sandcastle's current HP and maximum HP. The healthbar provides a visual representation of your sandcastle's durability during enemy attacks.</li>
+                    <li><strong>High Score</strong>: Records your best performance, challenging you to improve with each playthrough.</li>
+                </ul>
+            </li>
+            <li>
+              <strong class="overview">Functionalities</strong>:
+              <ul class="overview">
+                  <li><strong>Armor Upgrade</strong>: Upgrades your max HP, making it more resilient against enemy attacks.</li>
+                  <li><strong>Repair</strong>: Restores lost HP to keep your sandcastle standing strong.</li>
+                  <li><strong>Extra Cannons</strong>: Adds additional automatically shooting cannon to your sandcastle, increasing the rate and spread of sandball attacks.</li>
+              </ul>
+          </li>
+        </ul>
+    </div>
+    <p class="content">Your goal is to survive as many levels as possible by strategically using your resources and upgrades to fend off relentless enemy waves. With each level, the waves become more challenging. Can you defend your sandcastle and set a new high score?
+    </p>
+    <br><hr>
+    <br><h2 style="color: palevioletred;">Coming soon..</h2>
+    <br><br><br><br><br><br><br><br><br><br>
+  </div>
+{% endblock %}

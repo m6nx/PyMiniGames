@@ -1,0 +1,30 @@
+{% extends "base.html" %} {% block title %}Profile{% endblock %} 
+{% block content%}
+
+<br><br><br>
+<h1 align="center">Your Profile</h1>
+<hr>
+<br><br>
+<h2 align="center"><strong>Username: </strong> {{ current_user.user_name }} </h1>
+<h3 align="center"><strong>Email: </strong> {{ current_user.email }} </h3>
+<br><br>
+<hr>
+<h4 align="center">Your highscores/notes</h4>
+<ul class="list-group list-group-flush" id="notes">
+    {% for note in user.notes %}
+    <li class="list-group-item form-control" style="border-radius: 20px;">
+      {{ note.data }}
+      <button type="button" class="close" onClick="deleteNote({{ note.id }})">
+        <span aria-hidden="true" style="color: yellowgreen;">&times;</span>
+      </button>
+    </li>
+    {% endfor %}
+  </ul>
+<br>
+<form method="POST">
+    <textarea name="note" id="note" class="form-control"></textarea>
+    <div align="center">
+        <button type="submit" class="btn btn-primary" style="border: black;">Add</button>
+    </div>
+</form>
+{% endblock %}

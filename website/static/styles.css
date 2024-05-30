@@ -1,0 +1,96 @@
+body {
+    background-color: yellowgreen;
+}
+
+.navbar {
+    background-color: black;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.navbar-nav > a {
+    color: yellowgreen;
+    margin-left: 20px;
+    margin-top: 70px;
+    margin-bottom: 80px;
+}
+
+#startButton {
+    background-color: black;
+    color: yellowgreen;
+    margin: 0px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+#startButton:hover {
+    color: orange;
+}
+
+#startButton2 {
+    background-color: black;
+    color: yellowgreen;
+    margin: 0px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+#startButton2:hover {
+    color: blueviolet;
+}
+
+h3 {
+    margin-top: 30px;
+}
+
+.btn {
+    background-color: black;
+    color: yellowgreen;
+    margin-top: 5px;
+    border-radius: 10px;
+    float: right;
+}
+
+.btn:hover {
+    color: yellow;
+}
+
+.form-control {
+    background-color: black;
+    color: yellow;
+    margin: 3px;
+    border-radius: 20px;
+    border: black;
+}
+
+.form-control::placeholder {
+    color: green;
+}
+
+.form-control:focus {
+    background-color: black;
+    border: yellow;
+    color: yellow;
+}
+
+.sign-up {
+    font-size: 1.2em;
+    margin-left: 5px;
+}
+
+.content {
+    font-size: 25px;
+}
+
+#Monkey {
+    color: blueviolet;
+}
+
+#Beach {
+    color: orangered;
+}
+
+.overview {
+    font-size: 1.3em;
+}
+
